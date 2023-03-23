@@ -201,7 +201,7 @@ img{
 }
 
 .color {
-    color: #3A4004;
+    background-color: #3A4004;
 }
 
 /* =====    FOOTER      ===== */
@@ -480,16 +480,51 @@ p{
         margin: 10px 0px;
     }
 
+    .bestContent {
+        width: 100%;
+        height: fit-content;
+        padding: 80px 50px;
+        margin-bottom: 15px;
+    }
+    .bestContent .headingTag1 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .bestContent .description {
+        font-size: 16px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .botonCtaMain {
+        padding: 13px;
+        border-radius: 11px;
+    }
+
+    .textBoton {
+        font-size: 15px;
+    }
+
+    .categories .tituloSection{
+        font-size: 25px;
+    }
+
+    .categories .subTitulos {
+        font-size: 20px;
+    }
+
     .gridFooter {
         grid-template-columns: 100%;
         grid-auto-rows: 1fr;
+        grid-template-rows: none;
         grid-template-areas:
         "textfoot"
         "formfoot"
         "marca"
-        "marca"
         "nav"
         "bottomfoot";
+        gap: 25px;
     }
 
     .topFooterText h4{
@@ -507,11 +542,32 @@ p{
     }
 
     .topFooterForm {
-        display: none
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
     }
 
-    .navItems {
-        display: none;
+    .form .input {
+        width: fit-content;
+    }
+
+    .navItems p{
+        font-size: 12px;
+    }
+
+    .midFooterNav { 
+        gap: 10px;
+        height: fit-content;
+    }
+
+    .bottomFooter {
+        width: 80%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .gridFooter p {
+        font-size: 12px;
     }
 }
 
